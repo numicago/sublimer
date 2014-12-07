@@ -1,0 +1,68 @@
+{
+    "applications": {
+        "name": "Applications",
+        "list": [
+                 {
+                 "name": "All Applications",
+                 "location": "~/All My Stuff/linkedcare/Projects/Apps",
+                 }, {
+                 "name": "ProLinkedcare",
+                 "location": "~/All My Stuff/linkedcare/Projects/Apps/linkedcare",
+                 }, {
+                 "name": "MyLinkedcare",
+                 "location": "~/All My Stuff/linkedcare/Projects/Apps/mylinkedcare",
+                 }
+                 ]
+    },
+    "services": {
+        "name": "Services",
+        "list": [
+                 {
+                 "name": "All Services",
+                 "location": "~/All My Stuff/linkedcare/Projects/Services",
+                 }, {
+                 "name":"PatientFile",
+                 "location": "~/All My Stuff/linkedcare/Projects/Services/patient_file_service",
+                 }, {
+                 "name":"Sensors",
+                 "location": "~/All My Stuff/linkedcare/Projects/Services/sensors",
+                 }, {
+                 "name":"Papyrus",
+                 "location": "~/All My Stuff/linkedcare/Projects/Services/papyrus",
+                 }, {
+                 "name":"BVL",
+                 "location": "~/All My Stuff/linkedcare/Projects/Services/biometrics-vitals"
+                 }
+                 ]
+    },
+    "myDevelopment": {
+        "name": "My Development",
+        "list": [
+                 {
+                 "name": "Canal Hollywood",
+                 "location": "~/All My Stuff/MyDevelopment/web/ror/CanalHollywood"
+                 }
+                 ]
+    },
+    "gems": {
+        "name": "Gems",
+        "list": [
+                 {
+                 "name": "UseCasing",
+                 "location": "~/All My Stuff/linkedcare/Projects/Gems/usecasing"
+                 }
+                 ]
+    },
+    "helpers": {
+        "name": "Helpers",
+        "list": [
+                 {
+                 "name": "Tazor",
+                 "location": "~/All My Stuff/linkedcare/Projects/Helpers/tazor"
+                 }, {
+                 "name": "ValidicClientInterface",
+                 "location": "~/All My Stuff/linkedcare/Projects/Helpers/ValidicInterface"
+                 }
+                 ]
+    }
+}

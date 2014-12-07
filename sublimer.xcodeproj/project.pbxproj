@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85475FF31A21131C00DD5B4C /* TypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85475FF11A21131C00DD5B4C /* TypesController.swift */; };
+		85475FF41A21131C00DD5B4C /* TypesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85475FF21A21131C00DD5B4C /* TypesController.xib */; };
+		854EEE2A1A232E39001C260A /* ExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854EEE281A232E39001C260A /* ExportController.swift */; };
+		854EEE2B1A232E39001C260A /* ExportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854EEE291A232E39001C260A /* ExportController.xib */; };
+		854EEE2E1A232FFF001C260A /* ImportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854EEE2C1A232FFF001C260A /* ImportController.swift */; };
+		854EEE2F1A232FFF001C260A /* ImportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854EEE2D1A232FFF001C260A /* ImportController.xib */; };
+		8584D7911A208B9B00226CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584D7901A208B9B00226CF5 /* AppDelegate.swift */; };
+		8584D7931A208B9B00226CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7921A208B9B00226CF5 /* Images.xcassets */; };
+		8584D7961A208B9B00226CF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7941A208B9B00226CF5 /* MainMenu.xib */; };
+		8584D7A21A208B9B00226CF5 /* sublimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584D7A11A208B9B00226CF5 /* sublimerTests.swift */; };
+		8584D7AC1A208C5300226CF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584D7AB1A208C5300226CF5 /* main.swift */; };
+		8584D7AF1A20B8A200226CF5 /* export.png in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7AD1A20B8A200226CF5 /* export.png */; };
+		8584D7B01A20B8A200226CF5 /* import.png in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7AE1A20B8A200226CF5 /* import.png */; };
+		8584D7B31A20BA1F00226CF5 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7B21A20BA1F00226CF5 /* new.png */; };
+		85BB80B61A20C2AA000E2B9C /* ProjectsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB80B41A20C2AA000E2B9C /* ProjectsController.swift */; };
+		85BB80B71A20C2AA000E2B9C /* ProjectsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85BB80B51A20C2AA000E2B9C /* ProjectsController.xib */; };
+		85D798011A214F9A0032A965 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D798001A214F9A0032A965 /* delete.png */; };
+		85D8A9CF1A20C8250087BC33 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D8A9CE1A20C8250087BC33 /* settings.png */; };
+		85D8A9D11A2109C60087BC33 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8A9D01A2109C60087BC33 /* Feed.swift */; };
+		85D8A9D31A210A060087BC33 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8A9D21A210A060087BC33 /* json.swift */; };
+		85D8A9D51A210A950087BC33 /* applications.json in Resources */ = {isa = PBXBuildFile; fileRef = 85D8A9D41A210A950087BC33 /* applications.json */; };
+		85F280D51A2217AC00D00475 /* sublime_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 85F280D41A2217AC00D00475 /* sublime_icon.png */; };
+		85F280D71A22185200D00475 /* MenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F280D61A22185200D00475 /* MenuLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8584D79C1A208B9B00226CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8584D7831A208B9B00226CF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8584D78A1A208B9B00226CF5;
+			remoteInfo = sublimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85475FF11A21131C00DD5B4C /* TypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypesController.swift; path = ../TypesController.swift; sourceTree = "<group>"; };
+		85475FF21A21131C00DD5B4C /* TypesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TypesController.xib; path = ../TypesController.xib; sourceTree = "<group>"; };
+		854EEE281A232E39001C260A /* ExportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportController.swift; sourceTree = "<group>"; };
+		854EEE291A232E39001C260A /* ExportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportController.xib; sourceTree = "<group>"; };
+		854EEE2C1A232FFF001C260A /* ImportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportController.swift; sourceTree = "<group>"; };
+		854EEE2D1A232FFF001C260A /* ImportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImportController.xib; sourceTree = "<group>"; };
+		8584D78B1A208B9B00226CF5 /* sublimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sublimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8584D78F1A208B9B00226CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8584D7901A208B9B00226CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8584D7921A208B9B00226CF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8584D7951A208B9B00226CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8584D79B1A208B9B00226CF5 /* sublimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sublimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8584D7A01A208B9B00226CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8584D7A11A208B9B00226CF5 /* sublimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sublimerTests.swift; sourceTree = "<group>"; };
+		8584D7AB1A208C5300226CF5 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8584D7AD1A20B8A200226CF5 /* export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = export.png; sourceTree = "<group>"; };
+		8584D7AE1A20B8A200226CF5 /* import.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = import.png; sourceTree = "<group>"; };
+		8584D7B21A20BA1F00226CF5 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		85BB80B41A20C2AA000E2B9C /* ProjectsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsController.swift; sourceTree = "<group>"; };
+		85BB80B51A20C2AA000E2B9C /* ProjectsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsController.xib; sourceTree = "<group>"; };
+		85D798001A214F9A0032A965 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		85D8A9CE1A20C8250087BC33 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		85D8A9D01A2109C60087BC33 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		85D8A9D21A210A060087BC33 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
+		85D8A9D41A210A950087BC33 /* applications.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = applications.json; sourceTree = "<group>"; };
+		85F280D41A2217AC00D00475 /* sublime_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sublime_icon.png; sourceTree = "<group>"; };
+		85F280D61A22185200D00475 /* MenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8584D7881A208B9B00226CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8584D7981A208B9B00226CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8584D7821A208B9B00226CF5 = {
+			isa = PBXGroup;
+			children = (
+				8584D78D1A208B9B00226CF5 /* sublimer */,
+				8584D79E1A208B9B00226CF5 /* sublimerTests */,
+				8584D78C1A208B9B00226CF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8584D78C1A208B9B00226CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8584D78B1A208B9B00226CF5 /* sublimer.app */,
+				8584D79B1A208B9B00226CF5 /* sublimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8584D78D1A208B9B00226CF5 /* sublimer */ = {
+			isa = PBXGroup;
+			children = (
+				85D798021A2150520032A965 /* ViewControllers */,
+				8584D7B11A20B8B700226CF5 /* Images */,
+				8584D7901A208B9B00226CF5 /* AppDelegate.swift */,
+				8584D7941A208B9B00226CF5 /* MainMenu.xib */,
+				85F280D21A21E4D600D00475 /* Helpers */,
+				85F280D31A21E4F900D00475 /* Resources */,
+				8584D7921A208B9B00226CF5 /* Images.xcassets */,
+				8584D78E1A208B9B00226CF5 /* Supporting Files */,
+				8584D7AB1A208C5300226CF5 /* main.swift */,
+				85F280D61A22185200D00475 /* MenuLoader.swift */,
+			);
+			path = sublimer;
+			sourceTree = "<group>";
+		};
+		8584D78E1A208B9B00226CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8584D78F1A208B9B00226CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8584D79E1A208B9B00226CF5 /* sublimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8584D7A11A208B9B00226CF5 /* sublimerTests.swift */,
+				8584D79F1A208B9B00226CF5 /* Supporting Files */,
+			);
+			path = sublimerTests;
+			sourceTree = "<group>";
+		};
+		8584D79F1A208B9B00226CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8584D7A01A208B9B00226CF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8584D7B11A20B8B700226CF5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				85F280D41A2217AC00D00475 /* sublime_icon.png */,
+				85D8A9CE1A20C8250087BC33 /* settings.png */,
+				85D798001A214F9A0032A965 /* delete.png */,
+				8584D7B21A20BA1F00226CF5 /* new.png */,
+				8584D7AD1A20B8A200226CF5 /* export.png */,
+				8584D7AE1A20B8A200226CF5 /* import.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		85D798021A2150520032A965 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85BB80B41A20C2AA000E2B9C /* ProjectsController.swift */,
+				85BB80B51A20C2AA000E2B9C /* ProjectsController.xib */,
+				85475FF11A21131C00DD5B4C /* TypesController.swift */,
+				85475FF21A21131C00DD5B4C /* TypesController.xib */,
+				854EEE281A232E39001C260A /* ExportController.swift */,
+				854EEE291A232E39001C260A /* ExportController.xib */,
+				854EEE2C1A232FFF001C260A /* ImportController.swift */,
+				854EEE2D1A232FFF001C260A /* ImportController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85F280D21A21E4D600D00475 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				85D8A9D21A210A060087BC33 /* json.swift */,
+				85D8A9D01A2109C60087BC33 /* Feed.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		85F280D31A21E4F900D00475 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85D8A9D41A210A950087BC33 /* applications.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8584D78A1A208B9B00226CF5 /* sublimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8584D7A51A208B9B00226CF5 /* Build configuration list for PBXNativeTarget "sublimer" */;
+			buildPhases = (
+				8584D7871A208B9B00226CF5 /* Sources */,
+				8584D7881A208B9B00226CF5 /* Frameworks */,
+				8584D7891A208B9B00226CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sublimer;
+			productName = sublimer;
+			productReference = 8584D78B1A208B9B00226CF5 /* sublimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8584D79A1A208B9B00226CF5 /* sublimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8584D7A81A208B9B00226CF5 /* Build configuration list for PBXNativeTarget "sublimerTests" */;
+			buildPhases = (
+				8584D7971A208B9B00226CF5 /* Sources */,
+				8584D7981A208B9B00226CF5 /* Frameworks */,
+				8584D7991A208B9B00226CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8584D79D1A208B9B00226CF5 /* PBXTargetDependency */,
+			);
+			name = sublimerTests;
+			productName = sublimerTests;
+			productReference = 8584D79B1A208B9B00226CF5 /* sublimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8584D7831A208B9B00226CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nuno Gonçalves";
+				TargetAttributes = {
+					8584D78A1A208B9B00226CF5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8584D79A1A208B9B00226CF5 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8584D78A1A208B9B00226CF5;
+					};
+				};
+			};
+			buildConfigurationList = 8584D7861A208B9B00226CF5 /* Build configuration list for PBXProject "sublimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8584D7821A208B9B00226CF5;
+			productRefGroup = 8584D78C1A208B9B00226CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8584D78A1A208B9B00226CF5 /* sublimer */,
+				8584D79A1A208B9B00226CF5 /* sublimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8584D7891A208B9B00226CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F280D51A2217AC00D00475 /* sublime_icon.png in Resources */,
+				85D8A9CF1A20C8250087BC33 /* settings.png in Resources */,
+				85D8A9D51A210A950087BC33 /* applications.json in Resources */,
+				8584D7B31A20BA1F00226CF5 /* new.png in Resources */,
+				8584D7B01A20B8A200226CF5 /* import.png in Resources */,
+				8584D7931A208B9B00226CF5 /* Images.xcassets in Resources */,
+				854EEE2F1A232FFF001C260A /* ImportController.xib in Resources */,
+				85475FF41A21131C00DD5B4C /* TypesController.xib in Resources */,
+				85BB80B71A20C2AA000E2B9C /* ProjectsController.xib in Resources */,
+				8584D7961A208B9B00226CF5 /* MainMenu.xib in Resources */,
+				85D798011A214F9A0032A965 /* delete.png in Resources */,
+				8584D7AF1A20B8A200226CF5 /* export.png in Resources */,
+				854EEE2B1A232E39001C260A /* ExportController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8584D7991A208B9B00226CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8584D7871A208B9B00226CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8584D7AC1A208C5300226CF5 /* main.swift in Sources */,
+				85475FF31A21131C00DD5B4C /* TypesController.swift in Sources */,
+				854EEE2E1A232FFF001C260A /* ImportController.swift in Sources */,
+				85D8A9D11A2109C60087BC33 /* Feed.swift in Sources */,
+				85F280D71A22185200D00475 /* MenuLoader.swift in Sources */,
+				85BB80B61A20C2AA000E2B9C /* ProjectsController.swift in Sources */,
+				8584D7911A208B9B00226CF5 /* AppDelegate.swift in Sources */,
+				85D8A9D31A210A060087BC33 /* json.swift in Sources */,
+				854EEE2A1A232E39001C260A /* ExportController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8584D7971A208B9B00226CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8584D7A21A208B9B00226CF5 /* sublimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8584D79D1A208B9B00226CF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8584D78A1A208B9B00226CF5 /* sublimer */;
+			targetProxy = 8584D79C1A208B9B00226CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8584D7941A208B9B00226CF5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8584D7951A208B9B00226CF5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8584D7A31A208B9B00226CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8584D7A41A208B9B00226CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8584D7A61A208B9B00226CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sublimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8584D7A71A208B9B00226CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = sublimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8584D7A91A208B9B00226CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sublimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sublimer.app/Contents/MacOS/sublimer";
+			};
+			name = Debug;
+		};
+		8584D7AA1A208B9B00226CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = sublimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sublimer.app/Contents/MacOS/sublimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8584D7861A208B9B00226CF5 /* Build configuration list for PBXProject "sublimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8584D7A31A208B9B00226CF5 /* Debug */,
+				8584D7A41A208B9B00226CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8584D7A51A208B9B00226CF5 /* Build configuration list for PBXNativeTarget "sublimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8584D7A61A208B9B00226CF5 /* Debug */,
+				8584D7A71A208B9B00226CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8584D7A81A208B9B00226CF5 /* Build configuration list for PBXNativeTarget "sublimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8584D7A91A208B9B00226CF5 /* Debug */,
+				8584D7AA1A208B9B00226CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8584D7831A208B9B00226CF5 /* Project object */;
+}
