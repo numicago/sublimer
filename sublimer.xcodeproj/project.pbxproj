@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8501DF941A34856B00BDE556 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8501DF931A34856B00BDE556 /* README.md */; };
 		85475FF31A21131C00DD5B4C /* TypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85475FF11A21131C00DD5B4C /* TypesController.swift */; };
 		85475FF41A21131C00DD5B4C /* TypesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85475FF21A21131C00DD5B4C /* TypesController.xib */; };
 		854EEE2A1A232E39001C260A /* ExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854EEE281A232E39001C260A /* ExportController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8501DF931A34856B00BDE556 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		85475FF11A21131C00DD5B4C /* TypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypesController.swift; path = ../TypesController.swift; sourceTree = "<group>"; };
 		85475FF21A21131C00DD5B4C /* TypesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TypesController.xib; path = ../TypesController.xib; sourceTree = "<group>"; };
 		854EEE281A232E39001C260A /* ExportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		8584D7821A208B9B00226CF5 = {
 			isa = PBXGroup;
 			children = (
+				8501DF931A34856B00BDE556 /* README.md */,
 				8584D78D1A208B9B00226CF5 /* sublimer */,
 				8584D79E1A208B9B00226CF5 /* sublimerTests */,
 				8584D78C1A208B9B00226CF5 /* Products */,
@@ -307,6 +310,7 @@
 			files = (
 				8584D7AC1A208C5300226CF5 /* main.swift in Sources */,
 				85475FF31A21131C00DD5B4C /* TypesController.swift in Sources */,
+				8501DF941A34856B00BDE556 /* README.md in Sources */,
 				854EEE2E1A232FFF001C260A /* ImportController.swift in Sources */,
 				85D8A9D11A2109C60087BC33 /* Feed.swift in Sources */,
 				85F280D71A22185200D00475 /* MenuLoader.swift in Sources */,

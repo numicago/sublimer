@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D7DE8289-3F67-4D0A-A4B2-9879E2C622AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>sublimer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91D6DCE4FDE1F27B89E1EE161544D32EBAD7E82D</key>
+		<string>https://github.com/numicago/sublimer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sublimer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91D6DCE4FDE1F27B89E1EE161544D32EBAD7E82D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/numicago/sublimer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91D6DCE4FDE1F27B89E1EE161544D32EBAD7E82D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91D6DCE4FDE1F27B89E1EE161544D32EBAD7E82D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sublimer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
