@@ -1,4 +1,4 @@
-LinkedActions
+Sublimer
 =============
 
 Running sublime from menu bar for specific projects fed from a json file
