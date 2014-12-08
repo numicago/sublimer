@@ -31,4 +31,14 @@ class TypesController: NSViewController, NSTableViewDataSource, NSTableViewDeleg
         return cellView;
     }
     
+    @IBOutlet weak var projectTypeText: NSTextField!
+    
+    @IBAction func addProjectType(sender: AnyObject) {
+        println("type: \(projectTypeText.stringValue)")
+        if !(projectTypeText.stringValue.isEmpty) {
+            settingsFeed.addProjectType(projectTypeText.stringValue)
+            self.typesTable.reloadData()
+        }
+    }
+    
 }

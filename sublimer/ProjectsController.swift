@@ -38,4 +38,28 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
             pathInput.stringValue = fileChooserModal.URLs[0].path!!
         }
     }
+    
+    @IBAction func saveProject(sender: AnyObject) {
+        var error: NSError?
+        
+        //settingsFeed.getJson().toString().writeToFile(path!, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
+        
+        var settingsJson = settingsFeed.getJson().toString(pretty: true)
+        var str = (settingsJson).dataUsingEncoding(NSUTF8StringEncoding)!.description
+            
+        // get URL to the the documents directory in the sandbox
+        let documentsUrl = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as NSURL
+        
+        // add a filename
+        let fileUrl = documentsUrl.URLByAppendingPathComponent("apps_temp.json")
+        println(fileUrl)
+        
+        // write to it
+        settingsJson.writeToURL(fileUrl, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+        
+        let content = String(contentsOfFile: fileUrl.path!, encoding: NSUTF8StringEncoding, error: nil)!
+        println("content \(content)")
+//        println(JSON.parse(content))
+    }
+
 }

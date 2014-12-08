@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		8501DF931A34856B00BDE556 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8501DF971A34B02500BDE556 /* sublimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sublimer.entitlements; sourceTree = "<group>"; };
 		85475FF11A21131C00DD5B4C /* TypesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypesController.swift; path = ../TypesController.swift; sourceTree = "<group>"; };
 		85475FF21A21131C00DD5B4C /* TypesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TypesController.xib; path = ../TypesController.xib; sourceTree = "<group>"; };
 		854EEE281A232E39001C260A /* ExportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportController.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		8584D78D1A208B9B00226CF5 /* sublimer */ = {
 			isa = PBXGroup;
 			children = (
+				8501DF971A34B02500BDE556 /* sublimer.entitlements */,
 				85D798021A2150520032A965 /* ViewControllers */,
 				8584D7B11A20B8B700226CF5 /* Images */,
 				8584D7901A208B9B00226CF5 /* AppDelegate.swift */,
@@ -247,6 +249,11 @@
 				TargetAttributes = {
 					8584D78A1A208B9B00226CF5 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					8584D79A1A208B9B00226CF5 = {
 						CreatedOnToolsVersion = 6.1;
@@ -432,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sublimer/sublimer.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = sublimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -443,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sublimer/sublimer.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = sublimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
