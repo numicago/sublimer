@@ -15,6 +15,11 @@ class TypesController: NSViewController, NSTableViewDataSource, NSTableViewDeleg
 
     var data:[String] = settingsFeed.getProjectNames()
     
+    func reloadProjects() {
+        data = settingsFeed.getProjectNames()
+        self.typesTable.reloadData()
+    }
+    
     func numberOfRowsInTableView(aTableView: NSTableView!) -> Int
     {
         return data.count
@@ -37,6 +42,7 @@ class TypesController: NSViewController, NSTableViewDataSource, NSTableViewDeleg
         println("type: \(projectTypeText.stringValue)")
         if !(projectTypeText.stringValue.isEmpty) {
             settingsFeed.addProjectType(projectTypeText.stringValue)
+            data = settingsFeed.getProjectNames()
             self.typesTable.reloadData()
         }
     }

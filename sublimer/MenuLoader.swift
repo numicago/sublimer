@@ -71,17 +71,7 @@ class MenuLoader : NSObject {
             item.target = self
             menuItemMenu.addItem(item)
         }
-        
-//        for var i = 0; i < projectsForType.count; i++ {
-//            
-//            var name = projectsForType[i]["name"].toString() as String
-//            methods[name] = projectsForType[i]["location"].toString() as String
-//            
-//            var item : NSMenuItem = NSMenuItem(title: name, action: "runSublime:", keyEquivalent: "")
-//            item.target = self
-//            menuItemMenu.addItem(item)
-//        }
-        
+                
         statusBarItem.menu!.addItem(menuItem)
         statusBarItem.menu!.setSubmenu(menuItemMenu, forItem: menuItem)
         

@@ -16,6 +16,12 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
     
     var data = settingsFeed.getProjectNames()
     
+    func reloadProjects() {
+        data = settingsFeed.getProjectNames()
+        typesComboBox?.reloadData()
+    }
+
+    
     func numberOfItemsInComboBox(aComboBox: NSComboBox) -> Int {
         return data.count
     }

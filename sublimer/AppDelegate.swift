@@ -36,8 +36,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var tag = item.tag
         
         if tag == 0 {
+            typesController?.reloadProjects()
             window.contentView = typesController!.view
         } else if tag == 1 {
+            projectController?.reloadProjects()
             window.contentView = projectController!.view
         } else if tag == 2 {
             window.contentView = importController!.view
