@@ -31,15 +31,19 @@ class Feed {
     private func setSettingsUp() {
         var error:NSError?
         if let content = NSString(contentsOfFile: filePath(), encoding: NSUTF8StringEncoding, error: &error) {
-            json = JSON.parse(content)
-            for (k:AnyObject, v:AnyObject) in json! {
-                var keyString = k as String
-                projectTypes.append(keyString)
-                projectNames.append(json![keyString]["name"].toString())
+            var data = content.dataUsingEncoding(NSUTF8StringEncoding)
+            json = JSON(data: data!, options: nil, error: nil)
+
+            for (projectTypeKey: String, projectType: JSON) in json! {
+                var typeName = projectType["name"]
+                var typeProjects = projectType["list"]
+                
+                projectTypes.append(projectTypeKey)
+                projectNames.append(typeName.stringValue)
             }
         } else {
             println(error)
-            json = JSON.parse("")
+            json = JSON(data: "".dataUsingEncoding(NSUTF8StringEncoding)!, options: nil, error: nil)
         }
     }
     
@@ -56,7 +60,7 @@ class Feed {
     }
     
     func getNameForProjectType(type:String) -> String {
-        return json![type]["name"].toString()
+        return json![type]["name"].stringValue
     }
     
     func getProjectsForType(type:String) -> JSON {
@@ -66,21 +70,20 @@ class Feed {
     func getProjectNamesForType(type:String) -> [String] {
         var json = getProjectsForType(type)["list"]
         var names:[String] = []
-        for (k:AnyObject, v:AnyObject) in json {
-            var keyString:Int = k as Int
-            names.append(json[keyString]["name"].toString())
+        for(projectIndex: String, project: JSON) in json["list"] {
+            var name = project["name"]
+            names.append(name.stringValue)
         }
-        
         return names
     }
     
     func getProjectsArrayForType(type: String) -> [JSON] {
-        var json = getProjectsForType(type)["list"]
+        var projectsForType = getProjectsForType(type)["list"]
         var projects:[JSON] = []
-        for (k:AnyObject, v:AnyObject) in json {
-            projects.append(v as JSON)
-        }
         
+        for(projectIndex: String, project: JSON) in projectsForType {
+            projects.append(project)
+        }
         return projects
     }
     

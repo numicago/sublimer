@@ -19,7 +19,7 @@ class ExportController: NSViewController {
         savePanel.canCreateDirectories = true
         if savePanel.runModal() == NSOKButton {
             println(savePanel.URL)
-            var settingsJson = settingsFeed.getJson().toString(pretty: true)
+            var settingsJson = settingsFeed.getJson().stringValue
             var path = savePanel.URL?.path
             var exportFile = NSFileHandle(forWritingAtPath: path!)
             

@@ -14,6 +14,7 @@
 		854EEE2B1A232E39001C260A /* ExportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854EEE291A232E39001C260A /* ExportController.xib */; };
 		854EEE2E1A232FFF001C260A /* ImportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854EEE2C1A232FFF001C260A /* ImportController.swift */; };
 		854EEE2F1A232FFF001C260A /* ImportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854EEE2D1A232FFF001C260A /* ImportController.xib */; };
+		85701EC61A35B8F300EF83B9 /* SwiftyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85701EC51A35B8F300EF83B9 /* SwiftyJson.swift */; };
 		8584D7911A208B9B00226CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584D7901A208B9B00226CF5 /* AppDelegate.swift */; };
 		8584D7931A208B9B00226CF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7921A208B9B00226CF5 /* Images.xcassets */; };
 		8584D7961A208B9B00226CF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8584D7941A208B9B00226CF5 /* MainMenu.xib */; };
@@ -27,7 +28,6 @@
 		85D798011A214F9A0032A965 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D798001A214F9A0032A965 /* delete.png */; };
 		85D8A9CF1A20C8250087BC33 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D8A9CE1A20C8250087BC33 /* settings.png */; };
 		85D8A9D11A2109C60087BC33 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8A9D01A2109C60087BC33 /* Feed.swift */; };
-		85D8A9D31A210A060087BC33 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8A9D21A210A060087BC33 /* json.swift */; };
 		85D8A9D51A210A950087BC33 /* applications.json in Resources */ = {isa = PBXBuildFile; fileRef = 85D8A9D41A210A950087BC33 /* applications.json */; };
 		85F280D51A2217AC00D00475 /* sublime_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 85F280D41A2217AC00D00475 /* sublime_icon.png */; };
 		85F280D71A22185200D00475 /* MenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F280D61A22185200D00475 /* MenuLoader.swift */; };
@@ -52,6 +52,7 @@
 		854EEE291A232E39001C260A /* ExportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExportController.xib; sourceTree = "<group>"; };
 		854EEE2C1A232FFF001C260A /* ImportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportController.swift; sourceTree = "<group>"; };
 		854EEE2D1A232FFF001C260A /* ImportController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImportController.xib; sourceTree = "<group>"; };
+		85701EC51A35B8F300EF83B9 /* SwiftyJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJson.swift; sourceTree = "<group>"; };
 		8584D78B1A208B9B00226CF5 /* sublimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sublimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8584D78F1A208B9B00226CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8584D7901A208B9B00226CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		85D798001A214F9A0032A965 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		85D8A9CE1A20C8250087BC33 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		85D8A9D01A2109C60087BC33 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		85D8A9D21A210A060087BC33 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		85D8A9D41A210A950087BC33 /* applications.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = applications.json; sourceTree = "<group>"; };
 		85F280D41A2217AC00D00475 /* sublime_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sublime_icon.png; sourceTree = "<group>"; };
 		85F280D61A22185200D00475 /* MenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLoader.swift; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 		85F280D21A21E4D600D00475 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				85D8A9D21A210A060087BC33 /* json.swift */,
 				85D8A9D01A2109C60087BC33 /* Feed.swift */,
+				85701EC51A35B8F300EF83B9 /* SwiftyJson.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -316,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8584D7AC1A208C5300226CF5 /* main.swift in Sources */,
+				85701EC61A35B8F300EF83B9 /* SwiftyJson.swift in Sources */,
 				85475FF31A21131C00DD5B4C /* TypesController.swift in Sources */,
 				8501DF941A34856B00BDE556 /* README.md in Sources */,
 				854EEE2E1A232FFF001C260A /* ImportController.swift in Sources */,
@@ -323,7 +324,6 @@
 				85F280D71A22185200D00475 /* MenuLoader.swift in Sources */,
 				85BB80B61A20C2AA000E2B9C /* ProjectsController.swift in Sources */,
 				8584D7911A208B9B00226CF5 /* AppDelegate.swift in Sources */,
-				85D8A9D31A210A060087BC33 /* json.swift in Sources */,
 				854EEE2A1A232E39001C260A /* ExportController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

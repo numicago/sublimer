@@ -44,7 +44,7 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
         
         //settingsFeed.getJson().toString().writeToFile(path!, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
         
-        var settingsJson = settingsFeed.getJson().toString(pretty: true)
+        var settingsJson = settingsFeed.getJson().stringValue
         var str = (settingsJson).dataUsingEncoding(NSUTF8StringEncoding)!.description
             
         // get URL to the the documents directory in the sandbox

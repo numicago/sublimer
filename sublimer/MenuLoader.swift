@@ -58,21 +58,29 @@ class MenuLoader : NSObject {
         statusBarItem.menu!.addItem(item)
     }
     
-    func addMenuWithSubmenu(jsonKey: String, menuItemTitle: String) {
-        var jsonItems = settingsFeed.getProjectsForType(jsonKey)["list"]
+    func addMenuWithSubmenu(type: String, menuItemTitle: String) {
+        var projectsForType = settingsFeed.getProjectsForType(type)["list"]
         
         let menuItem = NSMenuItem(title: menuItemTitle, action: nil, keyEquivalent: "")
         let menuItemMenu = NSMenu(title: "menu")
         
-        for var i = 0; i < jsonItems.length; i++ {
-            
-            var name = jsonItems[i]["name"].toString() as String
-            methods[name] = jsonItems[i]["location"].toString() as String
-            
+        for(projectIndex: String, project: JSON) in projectsForType {
+            var name = project["name"].stringValue
+            methods[name] = project["location"].stringValue
             var item : NSMenuItem = NSMenuItem(title: name, action: "runSublime:", keyEquivalent: "")
             item.target = self
             menuItemMenu.addItem(item)
         }
+        
+//        for var i = 0; i < projectsForType.count; i++ {
+//            
+//            var name = projectsForType[i]["name"].toString() as String
+//            methods[name] = projectsForType[i]["location"].toString() as String
+//            
+//            var item : NSMenuItem = NSMenuItem(title: name, action: "runSublime:", keyEquivalent: "")
+//            item.target = self
+//            menuItemMenu.addItem(item)
+//        }
         
         statusBarItem.menu!.addItem(menuItem)
         statusBarItem.menu!.setSubmenu(menuItemMenu, forItem: menuItem)
@@ -110,6 +118,7 @@ class MenuLoader : NSObject {
         var task = NSTask()
         
         task.launchPath = SUBLIME_PATH
+        println(projectPath)
         task.arguments = [projectPath]
         
         task.launch()
