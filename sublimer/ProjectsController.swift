@@ -14,6 +14,10 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
     
     @IBOutlet weak var typesComboBox: NSComboBox!
     
+    @IBOutlet weak var newProjectName: NSTextField!
+    
+    @IBOutlet weak var newProjectPath: NSTextField!
+    
     var data = settingsFeed.getProjectNames()
     
     func reloadProjects() {
@@ -21,7 +25,6 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
         typesComboBox?.reloadData()
     }
 
-    
     func numberOfItemsInComboBox(aComboBox: NSComboBox) -> Int {
         return data.count
     }
@@ -46,13 +49,19 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
     }
     
     @IBAction func saveProject(sender: AnyObject) {
+//        oldSaveProjectCode(sender)
+//        settingsFeed.addProjectToType(typesComboBox.objectValue!, )
+        settingsFeed.addProjectToType(typesComboBox.stringValue, projectName: newProjectName.stringValue, location: newProjectPath.stringValue)
+    }
+    
+    func oldSaveProjectCode(sender: AnyObject) {
         var error: NSError?
         
         //settingsFeed.getJson().toString().writeToFile(path!, atomically: false, encoding: NSUTF8StringEncoding, error: &error)
         
         var settingsJson = settingsFeed.getJson().stringValue
         var str = (settingsJson).dataUsingEncoding(NSUTF8StringEncoding)!.description
-            
+        
         // get URL to the the documents directory in the sandbox
         let documentsUrl = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as NSURL
         
@@ -65,7 +74,7 @@ class ProjectsController: NSViewController, NSComboBoxDataSource {
         
         let content = String(contentsOfFile: fileUrl.path!, encoding: NSUTF8StringEncoding, error: nil)!
         println("content \(content)")
-//        println(JSON.parse(content))
-    }
 
+    }
+    
 }

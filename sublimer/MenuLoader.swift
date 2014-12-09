@@ -21,7 +21,7 @@ class MenuLoader : NSObject {
     
     var projectTypes:[String] = []
     
-    var methods: [String: String] = ["": ""]
+    var titleVsAction: [String: String] = ["": ""]
     
     var window:NSWindow
     
@@ -66,7 +66,7 @@ class MenuLoader : NSObject {
         
         for(projectIndex: String, project: JSON) in projectsForType {
             var name = project["name"].stringValue
-            methods[name] = project["location"].stringValue
+            titleVsAction[name] = project["location"].stringValue
             var item : NSMenuItem = NSMenuItem(title: name, action: "runSublime:", keyEquivalent: "")
             item.target = self
             menuItemMenu.addItem(item)
@@ -77,6 +77,27 @@ class MenuLoader : NSObject {
         
         statusBarItem.menu!.addItem(NSMenuItem.separatorItem())
         
+    }
+    
+    func insertMenuWithSubmenu(type: String, menuItemTitle: String) {
+        statusBarItem.menu!.addItem(NSMenuItem.separatorItem())
+        var projectsForType = settingsFeed.getProjectsForType(type)["list"]
+        
+        let menuItem = NSMenuItem(title: menuItemTitle, action: nil, keyEquivalent: "")
+        let menuItemMenu = NSMenu(title: "menu")
+        
+        for(projectIndex: String, project: JSON) in projectsForType {
+            var name = project["name"].stringValue
+            titleVsAction[name] = project["location"].stringValue
+            var item : NSMenuItem = NSMenuItem(title: name, action: "runSublime:", keyEquivalent: "")
+            item.target = self
+            menuItemMenu.addItem(item)
+        }
+        let menuItemsCount = statusBarItem.menu!.numberOfItems
+        println("menu items \(menuItemMenu.numberOfItems)")
+        statusBarItem.menu!.insertItem(menuItem, atIndex: menuItemsCount - 3)//addItem(menuItem)
+        statusBarItem.menu!.setSubmenu(menuItemMenu, forItem: menuItem)
+        statusBarItem.menu!.insertItem(NSMenuItem.separatorItem(), atIndex: menuItemsCount - 2)
     }
     
     func addExtraItems() {
@@ -90,8 +111,6 @@ class MenuLoader : NSObject {
     }
     
     func setWindowVisible(sender: AnyObject){
-        //        appDelegate.applicationShouldHandleReopen()
-//        self.window.makeKeyAndOrderFront()
         //http://stackoverflow.com/questions/4859974/make-nswindow-front-but-not-in-focus
         self.window.orderFrontRegardless()
     }
@@ -104,7 +123,7 @@ class MenuLoader : NSObject {
     
     func runSublime(send: AnyObject?) {
         var item = send as NSMenuItem
-        var projectPath = methods[item.title]! as String
+        var projectPath = titleVsAction[item.title]! as String
         var task = NSTask()
         
         task.launchPath = SUBLIME_PATH

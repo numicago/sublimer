@@ -20,11 +20,11 @@ class Feed {
     }
     
     private func filePath() -> String {
-//        let bundle = NSBundle.mainBundle()
-//        return bundle.pathForResource("applications", ofType: "json")!
-          
-          let documentsUrl = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as NSURL
-          return documentsUrl.URLByAppendingPathComponent("apps_temp.json").path!
+        let bundle = NSBundle.mainBundle()
+        return bundle.pathForResource("applications", ofType: "json")!
+        
+//          let documentsUrl = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as NSURL
+//          return documentsUrl.URLByAppendingPathComponent("apps_temp.json").path!
     }
     
     private func setSettingsUp() {
@@ -92,6 +92,18 @@ class Feed {
         
         self.projectNames.append(type)
         self.projectTypes.append(type.lowercaseString)
+    }
+    
+    func addProjectToType(type: String, projectName: String, location: String) {
+        println(json![type]["list"].count)
+        var typeJson = json![type]["list"][0]
+        println(typeJson)
+        typeJson["name"].string = projectName
+        typeJson["location"].string = location
+        println(json)
+        println(type)
+        println(projectName)
+        println(location)
     }
     
 }

@@ -36,6 +36,10 @@ class TypesController: NSViewController, NSTableViewDataSource, NSTableViewDeleg
         return cellView;
     }
     
+    @IBAction func removeType(sender: AnyObject) {
+        
+    }
+    
     @IBOutlet weak var projectTypeText: NSTextField!
     
     @IBAction func addProjectType(sender: AnyObject) {
@@ -43,6 +47,7 @@ class TypesController: NSViewController, NSTableViewDataSource, NSTableViewDeleg
         if !(projectTypeText.stringValue.isEmpty) {
             settingsFeed.addProjectType(projectTypeText.stringValue)
             data = settingsFeed.getProjectNames()
+            menuLoader!.insertMenuWithSubmenu(projectTypeText.stringValue, menuItemTitle: projectTypeText.stringValue)
             self.typesTable.reloadData()
         }
     }

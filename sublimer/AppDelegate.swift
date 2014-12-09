@@ -1,12 +1,15 @@
 import Cocoa
 
 var settingsFeed = Feed()
+var appWindow: NSWindow?
+
+var menuLoader: MenuLoader?
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
-    var menuLoader: MenuLoader!
+//    var menuLoader: MenuLoader!
     
     var typesController:TypesController?
     var projectController:ProjectsController?
@@ -14,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var importController:ImportController?
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        appWindow = self.window!
+        
         typesController = TypesController(nibName: "TypesController", bundle: nil)
         projectController = ProjectsController(nibName: "ProjectsController", bundle: nil)
         exportController = ExportController(nibName: "ExportController", bundle: nil)
