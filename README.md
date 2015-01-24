@@ -10,7 +10,7 @@ Running sublime from menu bar for specific projects fed from a json file
 
 ====
 
-<h1>TODO</h1>
+## TODOs
 
 - [ ] English (or dynamic language)
 - [ ] Use coredata instead of trying to save a json file
